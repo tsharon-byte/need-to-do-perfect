@@ -1,0 +1,29 @@
+{
+  "name": "need-to-do-perfect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsharon-byte/need-to-do-perfect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsharon-byte/need-to-do-perfect/issues"
+  },
+  "homepage": "https://github.com/tsharon-byte/need-to-do-perfect#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.6.2",
+    "stylelint": "^16.25.0"
+  }
+}
